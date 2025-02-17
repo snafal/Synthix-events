@@ -1,0 +1,7 @@
+.rootColour{
+    -fx-background-color: linear-gradient( to right top,#b429f9, #26c5f3);
+    -fx-background-radius: 0 100px 100px 0px;
+}
+.mainAncorPane{
+    -fx-background-color: linear-gradient( to right top,#b429f9, #26c5f3);
+}

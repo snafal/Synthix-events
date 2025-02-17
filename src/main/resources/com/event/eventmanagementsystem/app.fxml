@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="colorBackground" stylesheets="@StyleSheets/app.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.event.eventmanagementsystem.AppController">
+   <children>
+      <AnchorPane layoutX="37.0" layoutY="32.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="362.0" style="-fx-background-radius: 50 30 30 30;" styleClass="colorBackground2" stylesheets="@StyleSheets/app.css">
+         <children>
+            <TextField fx:id="userName" layoutX="69.0" layoutY="184.0" opacity="0.82" prefHeight="50.0" prefWidth="237.0" promptText="User Name">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="119.0" layoutY="353.0" onAction="#loginbuttonAction" prefHeight="58.0" prefWidth="123.0" style="-fx-background-radius: 30 10 30 30;" text="Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima" size="23.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="236.0" layoutY="353.0" onAction="#signupbuttonAction" prefHeight="58.0" prefWidth="123.0" style="-fx-background-radius: 30 10 30 30;" text="Signup" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima" size="23.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="134.0" layoutY="455.0" prefHeight="40.0" prefWidth="94.0" text="Team 404 " textFill="WHITE">
+               <font>
+                  <Font name="Century" size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="25.0" prefHeight="114.0" prefWidth="205.0" text="SYNTHIX" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="149.0" layoutY="98.0" prefHeight="50.0" prefWidth="158.0" text="Events" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="65.0" layoutY="259.0" prefHeight="50.0" prefWidth="245.0" promptText="Password" />
+            <Label fx:id="errorMessagelable" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="148.0" prefHeight="30.0" prefWidth="327.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="565.0" layoutY="-1.0" minWidth="34.0" onAction="#handleCloseButtonAction" prefHeight="30.0" prefWidth="34.0" ripplerFill="BLACK" styleClass="colorBackground" text="X" visible="false" />
+      <ImageView accessibleRole="BUTTON" fitHeight="372.0" fitWidth="351.0" layoutX="435.0" layoutY="114.0" smooth="false">
+         <image>
+            <Image url="@Media/LandingImage.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
